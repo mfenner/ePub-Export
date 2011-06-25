@@ -1,0 +1,621 @@
+/*
+Name: CSS Template for ePuB Export Plugin
+Version: 1.2
+Author: Martin Fenner
+*/
+
+@page {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* p margin */
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+p.description {
+  margin-top: 1.5em;
+}
+
+/* inlines */
+
+em {
+  font-style: italic;
+  font-family: Georgia, Garamond, serif;
+}
+
+strong {
+  font-weight: bold;
+  font-family: Georgia, Garamond, serif;
+}
+
+strong em, em strong, h1 em, h2 em, h3 em, h4 em, .bolditalic {
+  font-weight: bold;
+  font-style: italic;
+  font-family: Georgia, Garamond, serif;
+}
+
+.lineannotation {
+  font-style: italic;
+  font-family: Georgia, Garamond, serif;
+}
+
+code strong em, code em strong {
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+
+code em, em code, pre em {
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+
+code strong, strong code, pre strong {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+code { 
+  font-family: "Courier New", Courier, monospace;
+}
+
+.underline { text-decoration: underline; }
+
+.strikethrough { text-decoration: line-through; }
+
+.smallcaps { font-variant: small-caps; }
+
+/* headings */
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  display: block;
+  -webkit-hyphens: none;
+}
+
+.title {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  page-break-before: always;
+  color: #000033;
+}
+
+h2, h4.tab_title {
+  font-size: 1.3em;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  page-break-before: always;
+	margin-bottom: 0.1em;
+  color: #000080;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 0.1em;
+  color: #00009C;
+}
+
+h3.author {
+
+}
+
+p.publisher {
+	font-variant: small-caps;
+	margin-top: 1em;
+}
+
+h4 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+h5 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+h6 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* images  */
+
+img {
+  max-width: 100%;
+	height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.figure-contents {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  padding-bottom: 0.10em;
+}
+  
+.figure {
+  background: #F5F5F5;
+  page-break-inside: avoid;
+  padding: 0.4em;
+  text-align: center;
+}
+
+.caption {
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.figure .title {
+  page-break-before: avoid;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  font-family: Georgia, Garamond, serif;
+}
+
+.alignleft, img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+	margin-top: 0.4em;
+}
+
+.alignright, img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+	margin-top: 0.4em;
+}
+
+.aligncenter, img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignleft, img.alignright, img.aligncenter {
+	margin-bottom: 0.75em;
+}
+
+.wp-caption {
+	line-height: 1em;
+	margin-bottom: 1.2em;
+	padding: 0;
+	page-break-inside: avoid;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wp-caption img {
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+.wp-caption-text {
+	color: #888;
+	font-size: smaller;
+  font-family: Arial, Helvetica, sans-serif;
+  page-break-before: avoid;
+  page-break-inside: avoid;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+/* sidebars */
+
+.sidebar {
+  border: solid black 2px;
+  background-color: #F5F5F5;
+  margin: 0.75em 0.4em 0.75em 0;
+}
+
+.sidebar > * {
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+.sidebar > a { display: none; }
+
+.sidebar table {
+  margin: 0.3em;
+}
+
+.sidebar .note, sidebar .warning, .sidebar .tip, .sidebar .caution {
+  width: 80%;
+  margin: 0.75em;
+  page-break-inside: avoid;
+  border-top: solid #000080 1px;
+  border-bottom: solid #000080 1px;
+  border-left: none;
+  border-right: none;
+}
+
+/* code blocks */
+
+pre {
+  white-space: pre-wrap;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.75em;
+  margin-left: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+/* title and copyright page */
+
+.book .titlepage .title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.author h3 {
+  font-family: Georgia, Garamond, serif;
+  font-size: 1.7em;
+  font-style: italic;
+  text-align: center;
+}
+
+.editor h3, .editor h4 { 
+  color: black;
+  margin: 0.75em 0 0.75em 0;
+  font-weight: normal; 
+  font-style: normal;
+  font-size: 1em;
+  font-family: Georgia, Garamond, serif;
+ }
+
+.dedication p { 
+  text-align: center;
+  font-style: italic;
+}
+
+.affiliation {
+  margin-left: 3em;
+  font-size: smaller;
+}
+
+/* epigraphs, blockquotes, attributions */
+
+div[class="attribution"] {
+  margin-left: 1.5em;
+}
+
+div#cover {
+	max-width: 100%;
+}
+
+div.addthis_container {
+	display:none;
+}
+
+h3[class="author"] .orgname { display: none } /* to work around bug */
+
+.epigraph {
+  width: 95%;
+  margin: 0.75em 0.75em 0.75em 0.4em;
+  page-break-inside: avoid;
+  border: dotted black 1px;
+  background-color: #F5F5F5;
+}
+
+.epigraph > * {
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+.blockquote {
+	font-style: italic;
+  width: 95%;
+  margin: 0.75em;
+  page-break-inside: avoid;
+  background-color: #F5F5F5;
+}
+
+.blockquote td, .blockquote th {
+  border: none;
+}
+
+/* refentries */
+
+.refentry h2 {
+  font-size: 1.1em;
+  color: #000033;
+}
+
+.refnamediv p {
+  margin-left: 1.5em;
+}
+
+/* lists */
+
+dd {
+  margin-left: 1.5em;
+}
+
+ol { 
+  margin-left: 1em;
+  padding-left: 1em;
+  list-style-type: decimal;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+ul { 
+  margin-left: 1em;
+  padding-left: 1em;
+  list-style: square outside;
+}
+
+ul ul { 
+  list-style-type: disc;
+}
+
+ul ul ul { 
+  list-style-type: circle;
+}
+
+.orderedlistalpha {
+  list-style-type: upper-alpha;
+}
+
+.simplelist {
+  margin-left: 1.5em;
+  margin-top: 0;
+  width: 100%;
+}
+
+.simplelist td {
+  border: none;
+  font-size: medium;
+  padding: 0;
+}
+
+.box { 
+	background: #ecf1f6;
+	margin: 0; 
+	padding: 0.75em;
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: normal;
+  font-style: normal;
+	margin-bottom: 0.75em; }
+
+/* examples */
+
+.example .title {
+  font-weight: normal;
+  font-style: italic;
+  font-family: Georgia, Garamond, serif;
+  page-break-after: avoid;
+}
+
+.example {  
+  background-color: #F5F5F5;
+}
+ 
+ /* notes, tips, warnings */
+ 
+.tip, .note {
+  width: 95%;
+  margin: 0.75em 0.75em 0.75em 0.4em;
+  page-break-inside: avoid;
+  border: dashed black 1px;
+  background-color: #F5F5F5;
+}
+
+.warning, .caution {
+  width: 95%;
+  margin: 0.75em 0.75em 0.75em 0.4em;
+  page-break-inside: avoid;
+  border: double black 4px; 
+  background-color: #F5F5F5;
+}
+
+dd .note, dd .tip, dd .warning, dd .caution {
+  margin: 0.50em 0 0.50em 1.25em;
+}
+
+.tip > *, .warning > *, .note > *, .caution > * {
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+.note h3, .warning h3, .tip h3, .caution h3 {
+  text-align: left !important;
+  page-break-after: avoid;
+}
+
+.tip h3:after, .note h3:after {
+  content: ' \270E';
+}
+
+.warning h3:after, .caution h3:after {
+  content: ' \2620';
+}
+
+/* tables */
+
+table {
+  margin-top: 0.5em;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  color: black;
+  background-color: #F5F5F5;
+  border: black 1px solid;
+  font-weight: bold;
+  font-family: Georgia, Garamond, serif;
+  font-size: smaller;
+  padding: 0.2em;
+  margin: 0;
+  text-align: left;
+}
+
+td  {
+  border: black 1px solid;
+  padding: 0.2em;
+  margin: 0;
+  border-spacing: 0;
+  font-size: smaller;
+}
+
+.table .title {
+  font-size: medium;
+  font-weight: normal;
+  font-style: italic;
+  font-family: Georgia, Garamond, serif;
+  page-break-after: avoid;
+  margin-bottom: 0.50em;
+}
+
+table code {
+  font-size: x-small;
+}
+
+
+/* syntax highlighting and coloring text in general*/
+
+code.boolean, .navy {
+  color: rgb(0,0,128); /* navy */
+}
+code.character, .olive {
+  color: rgb(128,128,0); /* olive */
+}
+code.comment, .blue {
+  color: rgb(0,0,255); /* blue */
+}
+code.conditional, .limegreen {
+  color: rgb(50,205,50); /* limegreen */
+}
+code.constant, .darkorange {
+  color: rgb(255,140,0); /* darkorange */
+}
+code.debug, .darkred {
+  color: rgb(139,0,0); /* darkred */
+}
+code.define, .darkgoldenrod, .gold {
+  color: rgb(184,134,11); /* darkgoldenrod */
+}
+code.delimiter, .dimgray {
+  color: rgb(105,105,105); /* dimgray */
+}
+code.error, .red {
+  color: rgb(255,0,0); /* red */
+}
+code.exception, .salmon {
+  color: rgb(250,128,11); /* salmon */
+}
+code.float, .steelblue {
+  color: rgb(70,130,180); /* steelblue */
+}
+code.function, .green {
+  color: rgb(0,128,0); /* green */
+}
+code.identifier, .royalblue {
+  color: rgb(65,105,225); /* royalblue */
+}
+code.ignore, .gray {
+  color: rgb(128,128,128); /* gray */
+}
+code.include, .purple {
+  color: rgb(128,0,128); /* purple */
+}
+code.keyword, .sienna {
+  color: rgb(160,82,45); /* sienna */
+}
+code.label, .deeppink {
+  color: rgb(255,20,147); /* deeppink */
+}
+code.macro, .orangered {
+  color: rgb(255,69,0); /* orangered */
+}
+code.number, .brown {
+  color: rgb(165,42,42); /* brown */
+}
+code.operator, .black {
+  color: black; /* black */
+}
+code.preCondit, .teal {
+  color: rgb(0,128,128); /* teal */
+}
+code.preProc, .fuschia {
+  color: rgb(255,0,255); /* fuschia */
+}
+code.repeat, .indigo {
+  color: rgb(75,0,130); /* indigo */
+}
+code.special, .saddlebrown {
+  color: rgb(139,69,19); /* saddlebrown */
+}
+code.specialchar, .magenta {
+  color: rgb(255,0,255); /* magenta */
+}
+code.specialcomment, .seagreen {
+  color: rgb(46,139,87); /* seagreen */
+}
+code.statement, .forestgreen {
+  color: rgb(34,139,34); /* forestgreen */
+}
+code.storageclass, .plum {
+  color: rgb(221,160,221); /* plum */
+}
+code.string, .darkred {
+  color: rgb(139,0,0); /* darkred */
+}
+code.structure, .chocolate {
+  color: rgb(210,106,30); /* chocolate */
+}
+code.tag, .darkcyan {
+  color: rgb(0,139,139); /* darkcyan */
+}
+code.todo, .black {
+  color: black; /* black */
+}
+code.type, .mediumslateblue {
+  color: rgb(123,104,238); /* mediumslateblue */
+}
+code.typedef, .darkgreen {
+  color: rgb(0,100,0); /* darkgreen */
+}
+code.underlined {
+  text-decoration: underline; /* guess what */
+}
+
+body {
+  font-family: Georgia, Garamond, serif;
+  font-size: 1em;
+	line-height: 120%;
+	text-align: left !important;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+	margin-top: 4em;
+	margin-bottom: 1em;
+}
